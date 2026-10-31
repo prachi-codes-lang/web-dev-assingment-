@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+</head>
+<body>
+
+    <h1>Tech Club Registration Form</h1>
+
+    <form>
+
+        <!-- Name -->
+        <label>Name:</label>
+        <input type="text" name="name" required>
+        <br><br>
+
+        <!-- Email -->
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <br><br>
+
+        <!-- Password -->
+        <label>Password:</label>
+        <input type="password" name="password" required>
+        <br><br>
+
+        <!-- Date -->
+        <label>Date of Birth:</label>
+        <input type="date" name="dob">
+        <br><br>
+
+        <!-- Phone -->
+        <label>Phone Number:</label>
+        <input type="tel" name="phone">
+        <br><br>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label>
+        <br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <br><br>
+
+        <!-- Checkboxes -->
+        <label>Interests:</label>
+        <br>
+        <input type="checkbox" name="interest" value="Coding"> Coding
+        <input type="checkbox" name="interest" value="Web Development"> Web Development
+        <input type="checkbox" name="interest" value="AI"> AI
+        <br><br>
+
+        <!-- Dropdown -->
+        <label>Select Course:</label>
+
+        <select name="course">
+            <option>Select Course</option>
+            <option>BCA</option>
+            <option>B.Tech</option>
+            <option>MCA</option>
+            <option>BBA</option>
+        </select>
+
+        <br><br>
+
+        <!-- Textarea -->
+        <label>Message:</label>
+        <br>
+        <textarea name="message" rows="5" cols="30"></textarea>
+
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>
