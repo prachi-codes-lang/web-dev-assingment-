@@ -1,0 +1,139 @@
+/* General Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Task 1: Box Model */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.box-section {
+    margin-bottom: 40px;
+}
+
+.box-demo {
+    width: 300px;
+    padding: 25px;
+    border: 5px solid #333;
+    margin: 20px;
+    background-color: lightblue;
+}
+
+/* Task 2: Profile Cards */
+.card-container {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 20px 0 40px;
+}
+
+.profile-card {
+    width: 250px;
+    padding: 25px;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card-blue {
+    background-color: #dceeff;
+}
+
+.card-pink {
+    background-color: #ffe0eb;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #444;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin: 0 auto 15px;
+}
+
+.profile-card button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+/* Task 3: Fixed Height and Overflow */
+.bio-box {
+    height: 150px;
+    overflow: auto;
+    padding: 15px;
+    border: 2px solid #555;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+/* Task 4: Sticky Top Bar */
+.top-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #222;
+    color: white;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar h2 {
+    margin: 0;
+}
+
+.top-bar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+/* Fixed Plus Button */
+.add-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 200;
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    background-color: #2563eb;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Task 5: Clean and Responsive Styling */
+@media (max-width: 600px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-demo {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

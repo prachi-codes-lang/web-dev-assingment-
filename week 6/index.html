@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 CSS Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Task 4: Sticky Top Bar -->
+    <header class="top-bar">
+        <h2>My Profile</h2>
+        <nav>
+            <a href="#cards">Cards</a>
+            <a href="#bio">Bio</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <!-- Task 1: Box Model -->
+        <section class="box-section">
+            <h2>1. CSS Box Model</h2>
+            <div class="box-demo">
+                This box demonstrates padding, border and margin.
+            </div>
+        </section>
+
+        <!-- Task 2: Two Colour Cards -->
+        <section id="cards">
+            <h2>2. Profile Cards</h2>
+
+            <div class="card-container">
+
+                <div class="profile-card card-blue">
+                    <div class="avatar">A</div>
+                    <h3>Alex</h3>
+                    <p>Web Development Student</p>
+                    <button>View Profile</button>
+                </div>
+
+                <div class="profile-card card-pink">
+                    <div class="avatar">S</div>
+                    <h3>Sam</h3>
+                    <p>Creative Designer</p>
+                    <button>View Profile</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Task 3: Overflow Auto -->
+        <section id="bio">
+            <h2>3. Bio Box</h2>
+
+            <div class="bio-box">
+                <h3>About Me</h3>
+                <p>
+                    Hello! I am a student learning HTML and CSS.
+                    I enjoy learning web development and designing
+                    beautiful websites.
+                </p>
+                <p>
+                    CSS is used to style web pages. It controls
+                    colours, fonts, spacing, borders and layouts.
+                </p>
+                <p>
+                    The CSS box model consists of content,
+                    padding, border and margin.
+                </p>
+                <p>
+                    Overflow auto allows content to scroll when
+                    it exceeds the fixed height of a container.
+                </p>
+                <p>
+                    I am improving my coding skills by practising
+                    HTML, CSS and JavaScript every day.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Task 4: Fixed Button -->
+    <button class="add-button">+</button>
+
+</body>
+</html>
