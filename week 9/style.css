@@ -1,0 +1,156 @@
+/* 9.1 - Mobile First Layout */
+
+/* Basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* 9.2 - Responsive Images and rem Font Sizes */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Navbar using Flexbox - 9.3 */
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #222;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Hero Section */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: white;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 0.7rem 1.5rem;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Grid Layout - 9.3 */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+}
+
+.card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #222;
+    color: white;
+}
+
+/* 9.1 - Tablet Media Query */
+
+@media (min-width: 768px) {
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        text-align: left;
+        padding: 3rem;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop Media Query */
+
+@media (min-width: 1024px) {
+
+    .navbar {
+        padding: 1.5rem 3rem;
+    }
+
+    .hero {
+        padding: 4rem;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 3rem;
+    }
+}
